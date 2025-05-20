@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/tailwindcss.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <title>Nerone-template</title>
+</head>
+
+<style>
+    .k{
+        top: 20%;
+    }
+    .o{
+        top: 20%;
+    }
+    @media screen and (min-width:1027px) {
+    .k{
+        right: 280px;
+    }
+    .o{
+        left: 280px;
+    }
+    }
+
+    @media screen and (min-width:1024px) {
+    .k{
+        right: 170px;
+    }
+    .o{
+        left: 170px;
+    }
+    }
+    #op{
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        background-color: #dd5e2d;
+        width: 18px;
+        height: 19px;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and (min-width:1027px) {
+    #harddiv{
+        width: 84%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    }
+
+    @media screen and (min-width:1024px) {
+    #harddiv{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    }
+    @media screen and (max-width:1000px) {
+    #harddiv{
+        width: 84%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    }
+</style>
+<body>
+    <!-- Start Section 1 -->
+    <section class="bg-white fixed top-0 left-0 right-0 w-full z-50 ">
+        <header class="container py-[28px] md:py-[10px] flex items-center justify-between">
+                       <img src="./images/brand.png" class="logo w-[300px] " alt="">
+                       <ul class="list hidden md:flex ml-auto">
+                           <li><a href="index.html" class="px-5 text-primColor">Home</a></li>
+                           <li><a href="#" class="px-5 hover:text-primColor">Pages <img src="./images/svgexport-1.png" class="md:hidden xl:inline" alt=""></a>
+                            <ul>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Licensing.html">Licensing</a></li>
+                                <li><a href="StyleGuide.html">Style Guide</a></li>
+                                <li><a href="#">Password</a></li>
+                                <li><a href="#">404</a></li>
+                                </ul>
+                            </li>   
+                     
+                           <li><a href="Shop.html" class="px-5 hover:text-primColor">Shop</a></li>
+                           <li><a href="#" class="px-5 hover:text-primColor">Collections <img src="./images/svgexport-1.png" class="md:hidden xl:inline" alt=""></a>
+                            <ul>
+                                <li><a href="BestSeller.html">Best Seller</a></li>
+                                <li><a href="LastActs.html">Last Acts</a></li>
+                                <li><a href="TopRated.html">Top Rated</a></li>
+                                <li><a href="RelatedProdutcs.html">Related Prod</a></li>
+                                <li><a href="HotProducts.html">Hot Prod</a></li>
+                                <li><a href="SalesOff.html">Sales Off</a></li>
+                                </ul>
+                            </li>   
+                           <li><a href="Blog.html" target="_self" class="px-5 hover:text-primColor">Blog</a></li>
+                           <li><a href="Contact.html" target="_self" class="px-5 hover:text-primColor">Contact</a></li>
+                           <li class="flex items-center justify-center">
+                            <div>
+                            <a href="#" class="px-6 hover:text-primColor"><img src="./images/ranashopping.svg" class="w-[30px] hidden xl:inline" alt="" >Cart
+                            </a>
+                            </div> 
+                            <div class="relative   inline-block">
+                                <p id="op" class="absolute ">0</p>
+                                </div>
+                              <!-- <div class="relative  rounded-[50%] bg-[#ac1313] font-normal inline-block h-5 w-2 mx-auto">
+                              <p class="absolute text-black top--4">0</p>
+                              </div> -->
+                            </li>
+                       </ul> 
+                       <div class="links">
+                       <span class="icon">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        </span>
+                      <ul class="">
+                            <li><a href="index.html" class="hover:text-primColor">Home</a></li>
+                            <li><a href="#" class="hover:text-primColor">Pages</a></li>
+                            <li><a href="Shop.html" class="hover:text-primColor">Shop</a></li>
+                            <li><a href="BestSeller.html" class="hover:text-primColor">Collections</a></li>
+                            <li><a href="Blog.html" class="hover:text-primColor">Blog</a></li>
+                            <li><a href="Contact.html" class="hover:text-primColor">Contact</a></li>
+                        </ul>  
+                    </div>
+        </header>
+        </section>
+    <!-- End Section 1 -->
+
+<!-- Start Section 2 -->
+ <div id="bgsection" class="font-playfair ">
+   
+<section class="container flex items-center flex-wrap h-full">
+    <div><div class="lastcont hidden md:block"><img src="./images/mainproduct.png" class="scallimg w-[38%] absolute bottom-0 left-[33%] " alt=""></div>
+    <div class="">
+        <div class="content text-center pt-[80%] md:pt-0 md:text-left w-full md:w-[60%]">
+    <h1 class="text-[40px] leading-10  md:text-6xl ">Natural & Glowing Makeup Look</h1>
+    <div class=" mt-10 flex flex-col md:flex-row items-center ">
+    <a href="" class="inline-block mb-4 md:mb-0  text-primColor border border-solid border-[#dd5e2d] py-3 px-8 text-base hover:bg-[#dd5e2d] hover:text-white hover:duration-1000" id="bottom">SHOP NOW</a>
+    <a href="" class="inline-block ml-0 md:ml-6 " id="btn-line">LEARN MORE</a>
+</div>
+</div>
+<div class="lastcont hidden md:block ">
+        <p class="rotatep absolute text-sm  left-[150px] bottom-[100px]"><span class="text-primColor"> SCROLL </span> Down</p>
+        <img src="./images/down.png" class="arrow w-10 absolute left-[177px] bottom-5"  alt="">
+</div>
+</section>
+</div>
+</div> 
+<!-- End Section 2 -->
+
+
+<!-- Start Section 3 -->
+<section id="bgdiv" class="font-playfair ">
+    <main class="container py-32"> 
+        <div class="  grid grid-cols-1 text-center md:text-left md:grid-cols-2 gap-5 md:gap-0">
+            <div class="w-full">
+                <h1 class=" block md:hidden text-[34px] leading-9">The Best Cosmetics that a Woman Must Have</h1>
+                <h1 class=" hidden md:block text-5xl md:text-right">The Best Cosmetics that </h1>
+                <h1 class="hidden md:block text-5xl md:text-right">a Woman Must Have</h1>
+            </div>
+            <div class="hidden md:block"></div>
+            <div class="hidden md:block"></div>
+            <div><p class="text-xl text-gray">Peace is the beauty of life. It is sunshine. It is the smile of a child, the love of a mother, the joy of a father, the togetherness of a family. It is the advancement of man, the victory of a just cause, the triumph of truth.</p></div>      
+    </main>
+</section> 
+<!-- End Section 3 -->
+
+
+<!-- Start Section 4 -->
+<section class="bg-bgColor pt-40  font-playfair  ">
+<div class="container flex flex-wrap md:flex-nowrap items-center flex-col-reverse md:flex-row">
+    <div class=" ">
+        <div class="border-orangcle  rounded-full  w-[300px] h-[300px] md:w-[480px] md:h-[480px] mt-auto mb-auto border-[16px] ">    
+         <div class="w-[230px]  md:w-[360px] m-auto"><img src="./images/product1.png"></div>
+        </div>
+    </div>
+    <div class="sm:pl-12 xl:pl-20 pb-7 md:pb-0 ">
+            <a href="#" class="text-primColor text-2xl " >New Arrival Available</a>
+            <h2 class="text-5xl mt-3">Olive Body<br>
+                Lotion Creme</h2>
+                <div class=" w-full md:w-[85%] xl:w-[79%] mr-auto">
+            <p class="text-gray text-lg  my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare,eros dolor interdum nulla, ut commodo diam .</p>
+            <a href="" class="inline-block " id="btn-line">READ MORE</a>
+        </div>
+    </div>
+</div>
+
+<!-- Start Section 5 -->
+<section class="border-b border-solid border-[gainsboro] pt-36 pb-32">
+<main class=" container flex flex-wrap md:flex-nowrap justify-between ">
+<div id="" class="w-full mx-auto md:w-[33%]  ">
+        <div class="pb-6"><h4 class="text-2xl">Best Seller</h4></div>
+        <div>
+        <div  class=" flexdiv  flex   bg-white mb-6 mr-5 rounded-lg shadow-lg shadow-gray-400" id="trans1">
+                <div><img src="./images/imgcard1.png" class="w-28 mx-auto  md:mx-0" alt=""></div>
+                <div class="mt-[-20px] md:mt-0">
+                    <a href="#" class="block mt-6 mb-3 text-xl hover:text-primColor">Neck Massage Lotion</a>
+                <div class="linediv"><p class=" mb-0 pt-3 text-gray"> $ 135.00 USD</p></div>
+                <div class="pt-[20px] md:pt-0"><img class="w-24 py-5 md:py-0  mx-auto  md:mx-0  md:mt-12 " src="./images/stars.svg"></div>
+                </div>
+        </div>
+
+        <div  class="flexdiv  flex   bg-white mb-6 mr-5 rounded-lg shadow-lg shadow-gray-400" id="trans1">
+            <div><img src="./images/product2.png" class="w-24 mx-auto  md:mx-0" alt=""></div>
+            <div class="mt-[-20px] md:mt-0 pl-4">
+                <a href="#" class="block mt-6 mb-3 text-xl hover:text-primColor">Hair Creme</a>
+            <div class="linediv"><p class=" mb-0 pt-3 text-gray"> $ 125.00 USD</p></div>
+            <div class="pt-[20px] md:pt-0"><img class="w-24 py-5 md:py-0  mx-auto  md:mx-0  md:mt-12 " src="./images/stars.svg"></div>
+            </div>
+    </div>
+           
+    </div>
+    </div>
+  
+    
+    <div id="" class=" md:w-[33%] w-full ">
+        <div class="pb-6"><h4 class="text-2xl">Last Acts</h4></div>
+        <div>
+            <div  class="flexdiv  flex   bg-white mb-6 mr-5 rounded-lg shadow-lg shadow-gray-400" id="trans1">
+                <div><img src="./images/imgcard3.png" class="w-28 mx-auto  md:mx-0" alt=""></div>
+                <div class="mt-[-20px] md:mt-0">
+                    <a href="#" class="block mt-6 mb-3 text-xl hover:text-primColor">Face Lotion</a>
+                <div class="linediv"><p class=" mb-0 pt-3 text-gray"> $ 175.00 USD</p></div>
+                <div class="pt-[20px] md:pt-0"><img class="w-24 py-5 md:py-0  mx-auto  md:mx-0  md:mt-12 " src="./images/stars.svg"></div>
+                </div>
+        </div>
+
+        <div  class="flexdiv  flex   bg-white mb-6 mr-5 rounded-lg shadow-lg shadow-gray-400" id="trans1">
+            <div><img src="./images/imgcard4.png" class="w-[115px] mx-auto  md:mx-0" alt=""></div>
+            <div class="mt-[-20px] md:mt-0">
+                <a href="#" class="block mt-6 mb-3 text-xl hover:text-primColor">Hand Care Creme</a>
+            <div class="linediv"><p class=" mb-0 pt-3 text-gray"> $ 125.00 USD</p></div>
+            <div class="pt-[20px] md:pt-0"><img class="w-24 py-5 md:py-0  mx-auto  md:mx-0  md:mt-12 " src="./images/stars.svg"></div>
+            </div>
+    </div>
+    </div>
+           
+    </div>
+    </div>
+
+
+    <div id="" class=" md:w-[33%] w-full ">
+        <div class="pb-6"><h4  class="text-2xl">Top Rated</h4></div>
+        <div >
+            <div  class="flexdiv  flex   bg-white mb-6 mr-5 rounded-lg shadow-lg shadow-gray-400" id="trans1">
+                <div><img src="./images/imgcard4.png" class="w-[118px] mx-auto  md:mx-0" alt=""></div>
+                <div class="mt-[-20px] md:mt-0">
+                    <a href="#" class="block mt-6 mb-3 text-xl hover:text-primColor">Hair Nutrilion Balsam</a>
+                <div class="linediv"><p class=" mb-0 pt-3 text-gray"> $ 265.00 USD</p></div>
+                <div class="pt-[20px] md:pt-0"><img class="w-24 py-5 md:py-0  mx-auto  md:mx-0  md:mt-12 " src="./images/stars.svg"></div>
+                </div>
+        </div>
+    </div>
+    <div  class="flexdiv mt-0  lg:mt-6  flex   bg-white mb-6 mr-5 rounded-lg shadow-lg shadow-gray-400" id="trans1">
+        <div><img src="./images/imgcard6.png" class="w-[118px]  mx-auto  md:mx-0" alt=""></div>
+        <div class="mt-[-20px] md:mt-0">
+            <a href="#" class="block mt-6 mb-3 text-xl hover:text-primColor">Body Lotion</a>
+        <div class="linediv"><p class=" mb-0 pt-3 text-gray"> $ 235.00 USD</p></div>
+        <div class="pt-[20px] md:pt-0"><img class="w-24 py-5 md:py-0  mx-auto  md:mx-0  md:mt-12 " src="./images/stars.svg"></div>
+        </div>
+</div>
+</div>
+
+    
+</div>
+</main>
+</section>
+</section>
+<!-- End Section 5 -->
+
+<!-- Start Section 6 -->
+<section class=" pt-40  font-playfair  ">
+    <div class="container flex flex-wrap md:flex-nowrap items-center  justify-center">
+        <div class="sm:pr-12 xl:pr-20 pb-7 md:pb-0 text-right">
+            <a href="#" class="text-primColor text-2xl" >Hight Cosmetics Products</a>
+            <h2 class="text-5xl mt-3">Modern Make-Up<br>
+                Set of Tools</h2>
+                <div class=" w-full md:w-[85%] xl:w-[70%] ml-auto">
+                <p class="text-gray text-lg  my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare,eros dolor interdum nulla, ut commodo diam .</p>
+                <a href="" class="inline-block pb-6 " id="btn-line">READ MORE</a>
+            </div>
+        </div>
+        <div class=" ">
+            <div class="border-orangcle  rounded-full  w-[300px] h-[300px] md:w-[480px] md:h-[480px] ml-8 md:ml-0 my-auto border-[16px] ">    
+            <div class="w-[200px]  md:w-[330px] m-auto"><img src="./images/product2.png"></div>
+            </div>
+        </div>
+           
+        </div>
+    </section>
+        <div id="harddiv" class="md:grid md:grid-cols-2  pb-28 pt-48 font-playfair ">
+            <div class="md:grid md:grid-cols-2 md:gap-7 md:w-[90%] flex-wrap w-full ">
+                <div class="pr-2 mt-[-130px] md:mt-0">
+                    <h4 class="text-xl ">Categories</h4>
+                    <div class="border-b pt-8 text-gray border-b-bordergray text-base"><a class="hover:text-black" href="#">New Arrivals</a></div>
+                   <div class="border-b pt-4 text-gray border-b-bordergray text-base"><a class="hover:text-black" href="#">Nail Polish</a></div>
+                   <div  class="border-b pt-4 text-gray border-b-bordergray text-base"><a class="hover:text-black" href="#">Skin Care</a></div>
+                   <div  class="border-b pt-4 text-gray border-b-bordergray text-base"><a class="hover:text-black" href="#">Our Accessories</a></div>
+                   <div  class="border-b pt-4 text-gray border-b-bordergray text-base"><a class="hover:text-black"  href="#">Lip-sticks</a></div>
+                   <div  class="border-b pt-4 text-gray border-b-bordergray text-base"><a class="hover:text-black" href="#">Make-Up Tools</a></div>
+                </div>
+                <div class="pl-2">
+                    <h4 class="text-xl mt-11 md:mt-0">Collections</h4>
+                    <div class="border-b pt-8 text-gray border-b-bordergray text-base"> <a class="hover:text-black" href="#">Best Seller</a></div>
+                    <div class="border-b pt-4 text-gray border-b-bordergray text-base"> <a class="hover:text-black" href="#">Last Acts</a></div>
+                    <div class="border-b pt-4 text-gray border-b-bordergray text-base"> <a class="hover:text-black" href="#">Top Rated</a></div>
+                    <div class="border-b pt-4 text-gray border-b-bordergray text-base"> <a class="hover:text-black" href="#">Related Produtcs</a></div>
+                    <div class="border-b pt-4 text-gray border-b-bordergray text-base"> <a class="hover:text-black" href="#">Hot Products</a></div>
+                    <div class="border-b pt-4 text-gray border-b-bordergray text-base"><a class="hover:text-black" href="#">Sales Off</a></div>
+                </div>
+            </div>
+            <div class="  ">
+         <h1 class="text-4xl md:text-4xl pb-6  pt-20 md:pt-0  md:w-[90%] xl:w-[85%]">Style Is A Reflection Of Your Attitude And Your Personality</h1>
+         <p class="text-gray text-[17px] md:w-[95%]">The more often we see the things around us - even the beautiful and wonderful things - the more they become invisible to us. That is why we often take for granted the beauty of this world: the flowers, the trees, the birds, the clouds - even those we love. Because we see things so often, we see them less and less. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
+    </section>
+    <!--End Section 6 -->
+
+    <!-- Start Section 7 -->
+ <aside class="bg-bgColor py-32 border-y border-solid border-[gainsboro] font-playfair ">
+   <p class="text-6xl text-center pb-5">Best Selling Products</p>
+   <p class="text-xl text-center text-primColor pb-6">- Beauty is when you can appreciate yourself. -</p>
+    <section class="container grid grid-cols-1 md:grid-cols-3 gap-1 py-12">
+
+        <main class="w-full md:w-[95%] mb-5 md:mb-0 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+            <!-- there -->
+            <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                    <div id="divs" class="bg-[#fafafa] ">
+                        <img id="scalimg" src="./images/imgcard1.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                    </div>
+                </a>
+            </main>
+        
+        
+            <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                <div class="">
+                            <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Neck Message Location</a>
+                            <main class="flex items-center flex-col md:flex-row  justify-around ">
+                            <div class="p-3 w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">New Arrivals</a></p></div>
+                <div class="w-full md:w-1/2 p-3 text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 135.00 USD</p></div>
+                </main>  
+                </div>
+                </div>
+        </main>
+        
+        <main class="w-full md:w-[95%]  mb-5 md:mb-0 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+            <!-- there -->
+            <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                    <div id="divs" class="bg-[#fafafa] ">
+                        <img id="scalimg" src="./images/imgcard2.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                    </div>
+                </a>
+            </main>
+        
+        
+            <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                <div>
+                            <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Hair Creme</a>
+                            <main class="flex items-center flex-col md:flex-row  justify-around ">
+                            <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">Skin Care</a></p></div>
+                <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 125.00 USD</p></div>
+                </main>  
+                </div>
+                </div>
+        </main>
+        
+        <main class="w-full md:w-[95%]  mb-5 md:mb-0 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+            <!-- there -->
+            <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                    <div id="divs" class="bg-[#fafafa] ">
+                        <img id="scalimg" src="./images/imgcard4.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                    </div>
+                </a>
+            </main>
+        
+        
+            <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                <div>
+                            <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Hands Care Creme</a>
+                            <main class="flex items-center flex-col md:flex-row  justify-around ">
+                            <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">Skin Care</a></p></div>
+                <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 125.00 USD</p></div>
+                </main>  
+                </div>
+                </div>
+        </main>
+        
+        </section>
+        <section style="margin-top: -28px;" class=" container grid grid-cols-1 md:grid-cols-3 gap-1">
+        
+        
+            <main class="w-full md:w-[95%] mb-5 bg-white " style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                <!-- there -->
+                <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                    <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                        <div id="divs" class="bg-[#fafafa] ">
+                            <img id="scalimg" src="./images/p4.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                        </div>
+                    </a>
+                </main>
+            
+            
+                <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                    <div>
+                                <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Lime Body Wash</a>
+                                <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">Make-Up Tools</a></p></div>
+                    <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 365.00 USD</p></div>
+                    </main>  
+                    </div>
+                    </div>
+            </main>
+            
+            <main class="w-full md:w-[95%] mb-5 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                <!-- there -->
+                <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                    <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                        <div id="divs" class="bg-[#fafafa] ">
+                            <img id="scalimg" src="./images/imgcard6.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                        </div>
+                    </a>
+                </main>
+            
+            
+                <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                    <div>
+                                <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Body Lotion</a>
+                                <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">New Arrivals</a></p></div>
+                    <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 235.00 USD</p></div>
+                    </main>  
+                    </div>
+                    </div>
+            </main>
+            
+            <main class="w-full md:w-[95%] mb-5 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                <!-- there -->
+                <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                    <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                        <div id="divs" class="bg-[#fafafa] ">
+                            <img id="scalimg" src="./images/p6.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                        </div>
+                    </a>
+                </main>
+            
+            
+                <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                    <div>
+                                <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Clear Makeup Creme</a>
+                                <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">Nail Polish</a></p></div>
+                    <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 95.00 USD</p></div>
+                    </main>  
+                    </div>
+                    </div>
+            </main>               
+        </section>
+        <div class=" flex items-center justify-center pt-12">
+            <a href="" class=" inline-block  text-primColor border border-solid border-[#dd5e2d] py-4 px-8 text-xs hover:bg-[#dd5e2d] hover:text-white hover:duration-1000" id="bottom">VIEW ALL PRODUCTS!</a>
+            </div> 
+    </aside>
+        
+        
+
+     <!-- End Section 7 -->
+
+      <!-- Start Section 8 -->
+      <section class=" py-40 font-playfair  ">
+        <div class="container flex flex-wrap md:flex-nowrap items-center flex-col-reverse md:flex-row pb-28 md:pb-40">
+            <div class=" ">
+                <div class="bg-orang rounded-full w-[300px] h-[300px] md:w-[500px] md:h-[500px] mt-auto mb-auto relative">
+              
+                    <div class=" w-[260px] md:w-[400px] m-auto"><img src="./images/p4.png"></div>
+                </div>
+            </div>
+            <div class="sm:pl-12 xl:pl-20 pb-7 md:pb-0 ">
+                    <a href="#" class="text-primColor text-2xl " >New Arrival Available</a>
+                    <h2 class="text-5xl mt-3">Top Rated<br>
+                        Collections</h2>
+                        <div class=" w-full md:w-[85%] xl:w-[79%] mr-auto">
+                    <p class="text-gray text-lg  my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare,eros dolor interdum nulla, ut commodo diam .</p>
+                    <a href="" class="inline-block " id="btn-line">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+      
+       
+      <div class=" container md:grid md:grid-cols-3  flex-wrap m-auto" >
+        <div class="bg-white rounded shadow-slate-300 shadow-lg md:w-[90%]  w-full mb-7 border-4 border-gry ">
+            <h4 class="p-4 text-center mt-4 text-xl">RETURNE POLICY</h4>
+            
+            <div class="bg-gry">
+                <div class="h-[1px] w-full bg-slate-200 mt-3 "></div>
+            <h6 class="p-4 text-center mt-2 text-xl text-regal-blue">100% money back guarantee</h6></div>
+        </div>
+        <div class="bg-white rounded shadow-slate-300 shadow-lg border-4 md:w-[90%] w-full mb-7 border-gry">
+            <h4 class="p-4 text-center mt-4 text-xl">FREE SHIPPING</h4>
+           
+            <div class="bg-gry">
+                <div class="h-[1px] w-full bg-slate-200 mt-3 "></div>
+            <h6 class="p-4 text-center mt-2 text-xl text-regal-blue ">free shipping ovrer 99$</h6></div>
+
+        </div>
+        <div class="bg-white rounded shadow-slate-300 shadow-lg md:w-[90%]  w-full border-4 mb-7 border-gry">
+            <h4 class="p-4 text-center mt-4 text-xl">SUPPORT</h4>
+           
+            <div class="bg-gry">
+                <div class="h-[1px] w-full bg-slate-200 mt-3 "></div>
+            <h6 class="p-4 text-center mt-2 text-xl text-regal-blue ">support all day 24/7</h6></div>
+        </div>
+    </div>
+</div>
+</div>
+      </section>
+      
+
+     <!-- End Section 8 -->
+     <!-- Start Section 9 -->
+     <section class="bg-bgColor border-t border-b border-solid border-[gainsboro] pt-40  pb-36 font-playfair ">
+        <div class="container flex flex-wrap md:flex-nowrap items-center  justify-center">
+            <div class="sm:pr-12 xl:pr-20 pb-7 md:pb-0 text-right">
+                <a href="#" class="text-primColor text-2xl" >Hight Cosmetics Products</a>
+                <h2 class="text-5xl mt-3">Last Acts<br>
+                Collections</h2>
+                    <div class=" w-full md:w-[85%] xl:w-[70%] ml-auto">
+                    <p class="text-gray text-lg  my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare,eros dolor interdum nulla, ut commodo diam .</p>
+                    <a href="" class="inline-block pb-6 " id="btn-line">READ MORE</a>
+                </div>
+            </div>
+            <div class=" ">
+                <div class="bg-orang rounded-full w-[320px] h-[320px] md:w-[500px] md:h-[500px] mt-auto mb-auto relative">
+                     
+                    <div class=" w-[270px] md:w-[430px] m-auto"><img src="./images/product4.png"></div>
+                </div>
+            </div>
+        </div>
+            <div class="container pt-36">
+            <p class="text-center text-2xl mt-14  text-gray-700">- Trusted by World’s Best Brands -</p>
+            <div class="mt-20 shadow-lg ">
+            <div class="md:grid md:grid-cols-5 bg-white flex-wrap border border-solid border-[gainsboro]  ">
+                <div class="bg-white py-12 md:py-0 md:pt-5 border-b md:border-r border-[gainsboro] p-5 md:pb-10 flex justify-center align-middle"><img class="w-[120px] m-auto " src="./images/prand1.png"></div>
+                <div class="bg-white py-12 md:py-0 md:pt-5 border-b md:border-r border-[gainsboro] p-5 md:pb-10 flex justify-center align-middle"> <img class="w-[120px] m-auto" src="./images/prand2.png"></div>
+                <div class="bg-white py-12 md:py-0 md:pt-5 border-b md:border-r border-[gainsboro] p-5 md:pb-10 flex justify-center align-middle" ><img class="w-[120px] m-auto" src="./images/prand3.png"></div>
+                <div class="bg-white py-12 md:py-0 md:pt-5 border-b md:border-r border-[gainsboro] p-5 md:pb-10 flex justify-center align-middle"> <img class="w-[120px] m-auto"  src="./images/prand4.png"></div>
+                <div class="bg-white py-12 md:py-0 md:pt-5 border-b md:border-r border-[gainsboro] p-5 md:pb-10 flex justify-center align-middle"> <img class="w-[120px] m-auto"  src="./images/prand5.png"></div>
+            </div>
+        </div>
+         </div>
+     </section>
+        
+
+     <!-- End Section 9 -->
+
+    <!-- Start Section 10 -->
+<section class=" container py-36 font-playfair ">
+<div class="swiper" >
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="./images/fcarousel.jpg" alt="">
+        <p class="pt-8 w-full md:w-1/2 text-center mx-auto text-[#767575] text-xl md:text-2xl">Lorem ipsum dolor sit amet, dolor sit amet consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          <p class="pt-6 w-full md:w-1/2 text-center mx-auto text-gray text-lg pb-10 font-semibold"><span class="text-black">Tom Arnold-</span> Makeup Artist</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="./images/scarousel.jpg" alt="">
+        <p class="pt-8 w-full md:w-1/2 text-center mx-auto text-[#767575] text-xl md:text-2xl">Lorem ipsum dolor sit amet, dolor sit amet consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          <p class="pt-6 w-full md:w-1/2 text-center mx-auto text-gray text-lg pb-10 font-semibold"><span class="text-black">Tom Arnold-</span> Makeup Artist</p>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="./images/rana2.jpeg" alt="">
+        <p class="pt-8 w-full md:w-1/2 text-center mx-auto text-[#767575] text-xl md:text-2xll">Lorem ipsum dolor sit amet, dolor sit amet consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          <p class="pt-6 w-full md:w-1/2 text-center mx-auto text-gray text-lg pb-10 font-semibold"><span class="text-black"><span>Eduardo Eguerra -</span>Hair Artist</p>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev o"></div>
+    <div class="swiper-button-next k"></div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+         loop: true,
+
+        pagination: {
+        el: '.swiper-pagination',
+     },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+     },
+    });
+        </script>
+        </section>
+    <!-- End Section 10 -->
+
+    <!-- Start Section 11 -->
+
+    <section class=" bg-bgColor pb-28 pt-20  border-t  border-solid border-[gainsboro] font-playfair ">
+        <div class="text-center pb-10 pt-5">
+        <h1 class="text-5xl mb-3 font-medium">Our Blog Posts</h1>
+        <p class="text-primColor text-xl font-normal">- Loneliness adds beauty to life. -</p></div>
+        <div class="container flex flex-wrap md:flex-nowrap justify-betwen">
+        <div class=" bg-white m-2  hover:shadow-xl mb-11" id="trans2">
+            <div><img src="./images/col1.jpg"></div>
+            <div class="border-b border-solid border-[gainsboro] pb-8"><h1 class="text-2xl m-5 ">Lip Liner Pencil for a touch-up!</h1>
+                <p class="text-stone-400 pl-7 pr-10 ">It is not the beauty of a building you should look at; its the construction of the foundation that will stand the test of time.</p>
+            </div>
+            <div>
+                <div class=" flex flex-col md:flex-row items-center justify-around">
+                   
+                    <div class="p-5 w-full md:w-1/2 text-center  text-gray hover:text-black md:pr-10 border-b md:border-b-0 md:border-l-0 md:border-r border-solid border-bordergray text-xs xl:text-base hover:bg-bgColor"><a href="#">October 27, 2018 </a></div>
+                      
+                    <div class="p-5 w-full md:w-1/2 text-center  text-gray hover:text-black hover:bg-bgColor "><p class="md:inline-block">Read More</p></div>
+                </div>
+            </div>
+        </div>
+        <div class=" bg-white m-2  hover:shadow-xl mb-11" id="trans2">
+            <div><img src="./images/col2.jpg"></div>
+            <div class="border-b border-solid border-[gainsboro] pb-8"><h1 class="text-2xl m-5 ">Nail Polish Makes you ravishing!</h1>
+                <p class="text-stone-400 pl-7 pr-10">It is not the beauty of a building you should look at; its the construction of the foundation that will stand the test of time.</p>
+            </div>
+            <div>
+                <div class=" flex flex-col md:flex-row items-center justify-around">
+                   
+                    <div class="p-5 w-full md:w-1/2 text-center  text-gray hover:text-black md:pr-10 border-b md:border-b-0 md:border-l-0 md:border-r border-solid border-bordergray text-xs xl:text-base hover:bg-bgColor"><a href="#">October 27, 2018 </a></div>
+                      
+                    <div class="p-5 w-full md:w-1/2 text-center  text-gray hover:text-black hover:bg-bgColor"><p class="md:inline-block">Read More</p></div>
+                </div>
+            </div>
+        </div>
+        <div class=" bg-white m-2  hover:shadow-xl mb-9" id="trans2">
+            <div><img src="./images/col3.jpg"></div>
+            <div class="border-b border-solid border-[gainsboro] pb-8"><h1 class="text-2xl m-5 ">Sensitive Skins nees Patch Tesr</h1>
+                <p class="text-stone-400 pl-7 pr-10 ">It is not the beauty of a building you should look at; its the construction of the foundation that will stand the test of time.</p>
+            </div>
+            <div>
+                <div class=" flex flex-col md:flex-row items-center justify-around">
+                   
+                    <div class="p-5 w-full md:w-1/2 text-center  text-gray hover:text-black md:pr-10 border-b md:border-b-0 md:border-l-0 md:border-r border-solid border-bordergray text-xs xl:text-base hover:bg-bgColor"><a href="#">October 27, 2018 </a></div>
+                      
+                    <div class="p-5 w-full md:w-1/2 text-center  text-gray hover:text-black hover:bg-bgColor "><p class="md:inline-block">Read More</p></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container flex items-center justify-center pt-12">
+        <a href="" class=" inline-block  text-primColor border border-solid border-[#dd5e2d] py-3 px-8 text-xs hover:bg-[#dd5e2d] hover:text-white hover:duration-1000" id="bottom">VIEW ALL POSTS</a>
+        </div>
+    </div>
+       </section>
+
+    <!-- End Section 11 -->
+
+        <!-- footer -->
+        <!-- 1 -->
+
+<section class="font-playfair ">
+    <main class="flex flex-col md:flex-row items-center justify-center">
+        <div id="div1" class="w-full md:w-1/2 text-center p-[105px]">
+            <p class="text-lg opacity-60 text-white">OUR PHILOSOPHY</p>
+            <p class="text-[27px] md:text-4xl text-white">Let's Get In Touch</p>
+            <a href="" class="inline-block ml-6 text-white opacity-60 hover:opacity-[1] mt-7" id="btn-line2">LEARN MORE</a>
+        </div>
+        <div id="div2" class="w-full md:w-1/2 text-center p-[105px]">
+            <p class="text-lg opacity-60 text-white">WEHAT WE DO</p>
+            <p class="text-4xl text-white">Learn More</p>
+            <a href="" class="inline-block ml-6 text-white opacity-60 hover:opacity-[1] mt-7" id="btn-line2">LEARN MORE</a>
+        </div>
+    </main>
+</section>
+
+<!-- 2 -->
+<section class="font-playfair ">
+    <main class="container pt-6">
+        <div class="py-20" id="bgfooter">
+        <p class="text-4xl text-center" style="letter-spacing: 9px;">NERONE</p>
+    </main>
+    </section>
+    <section class="container">
+    <form class="pt-6">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+        <input type="email" class="h-12 px-5  outline-none w-full md:w-[26%] bg-bordergray border-b border-solid border-b-zinc-300  " placeholder="Enter Your Email Here">
+        <button type="submit" class="text-white bg-primColor h-12 px-10 w-full md:w-[24%] ">SUBMIT NOW</button>
+       </form>
+        </div>
+</section>
+
+<!-- 3 -->
+<section class="pt-28 pb-[60px] font-playfair ">
+
+
+        <div class="container mb-14 pt-2 pb-1 border-y border-solid border-[#dbd8d8] flex  flex-col md:flex-row ">
+            <aside class="flex">
+            <div class="px-12 pb-3 xl:px-16 "><a href="index.html">HOME</a></div>
+            <div class="px-12 pb-3 xl:px-16 mx-auto md:mx-0 "><a href="Licensing.html" class="">PAGES</a></div>
+             </aside>
+             <aside class="flex">
+            <div class="px-12 pb-3 xl:px-16 "><a href="Shop.html">SHOP</a></div>
+            <div class="px-12 pb-3 xl:px-16 mx-auto md:mx-0"><a href="BestSeller.html">COLLECTIONS</a></div>
+            </aside>
+            <aside class="flex">
+            <div class="px-12 pb-3 xl:px-16 "><a href="Blog.html">BLOG</a></div>
+            <div class="px-12 pb-3 xl:px-16 mx-auto md:mx-0"><a href="Contact.html">CONTACT</a></div>
+            </aside>
+        </div>
+    </main>
+</section>
+    <section class="container text-center pb-[70px] font-playfair ">
+        <p class="text-gray">Template design by <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Dorian Hoxha</a> - <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Image License Info </a> & <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Style-Guide </a>, Powered by <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Webflow</a></p>
+        <div class="flex items-center justify-center mt-8">
+        <p><a href="#"><svg class="w-3 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></p>
+        <p><a href="#"><svg class="w-4 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></p>
+        <p><a href="#"><svg class="w-4 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></p>
+        <p><a href="#"><svg class="w-4 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a></p>
+    </div>
+    </section>
+
+    
+</body>
+</html>

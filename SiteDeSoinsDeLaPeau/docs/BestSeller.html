@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/tailwindcss.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+   
+<title>Nerone-template</title>
+</head>
+<style>
+    #k{
+        top: 20%;
+    }
+    #op{
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        background-color: #dd5e2d;
+        width: 18px;
+        height: 19px;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <!-- Start Section 1 -->
+    <section class="bg-white fixed top-0 left-0 right-0 w-full z-50 ">
+        <header class="container py-[28px] md:py-[10px] flex items-center justify-between">
+                       <img src="./images/brand.png" class="logo w-[300px] " alt="">
+                       <ul class="list hidden md:flex ml-auto">
+                           <li><a href="index.html" class="px-5 text-primColor">Home</a></li>
+                           <li><a href="#" class="px-5 hover:text-primColor">Pages <img src="./images/svgexport-1.png" class="md:hidden xl:inline" alt=""></a>
+                            <ul>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Licensing.html">Licensing</a></li>
+                                <li><a href="StyleGuide.html">Style Guide</a></li>
+                                <li><a href="#">Password</a></li>
+                                <li><a href="#">404</a></li>
+                                </ul>
+                            </li>   
+                     
+                           <li><a href="Shop.html" class="px-5 hover:text-primColor">Shop</a></li>
+                           <li><a href="#" class="px-5 hover:text-primColor">Collections <img src="./images/svgexport-1.png" class="md:hidden xl:inline" alt=""></a>
+                            <ul>
+                                <li><a href="BestSeller.html">Best Seller</a></li>
+                                <li><a href="LastActs.html">Last Acts</a></li>
+                                <li><a href="TopRated.html">Top Rated</a></li>
+                                <li><a href="RelatedProdutcs.html">Related Prod</a></li>
+                                <li><a href="HotProducts.html">Hot Prod</a></li>
+                                <li><a href="SalesOff.html">Sales Off</a></li>
+                                </ul>
+                            </li>   
+                           <li><a href="Blog.html" target="_self" class="px-5 hover:text-primColor">Blog</a></li>
+                           <li><a href="Contact.html" target="_self" class="px-5 hover:text-primColor">Contact</a></li>
+                           <li class="flex items-center justify-center">
+                            <div>
+                            <a href="#" class="px-6 hover:text-primColor"><img src="./images/ranashopping.svg" class="w-[30px] hidden xl:inline" alt="" >Cart
+                            </a>
+                            </div> 
+                            <div class="relative   inline-block">
+                                <p id="op" class="absolute ">0</p>
+                                </div>
+                              <!-- <div class="relative  rounded-[50%] bg-[#ac1313] font-normal inline-block h-5 w-2 mx-auto">
+                              <p class="absolute text-black top--4">0</p>
+                              </div> -->
+                            </li>
+                       </ul> 
+                       <div class="links">
+                       <span class="icon">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                        </span>
+                      <ul class="">
+                            <li><a href="index.html" class="hover:text-primColor">Home</a></li>
+                            <li><a href="#" class="hover:text-primColor">Pages</a></li>
+                            <li><a href="Shop.html" class="hover:text-primColor">Shop</a></li>
+                            <li><a href="BestSeller.html" class="hover:text-primColor">Collections</a></li>
+                            <li><a href="Blog.html" class="hover:text-primColor">Blog</a></li>
+                            <li><a href="Contact.html" class="hover:text-primColor">Contact</a></li>
+                        </ul>  
+                    </div>
+        </header>
+        </section>
+    <!-- End Section 1 -->
+
+    <!-- Start Section 2 -->
+    <section class="bstSel mt-24 md:mt-0 border border-solid border-bordergray md:border-0 font-playfair"> 
+        <div class="container hidden md:block md:pt-28 md:pb-6">
+            <p class="text-center md:text-left  text-5xl md:pt-20 md:pb-24 "> Best Seller</p>
+        </div>
+        <div class="container h-52  md:hidden">
+            <p class="text-center  text-5xl pt-16 "> Best Seller</p>
+        </div>
+    </section>
+    <aside class=" my-5 md:my-0 md:border border-solid border-bordergray font-playfair ">
+    
+        <main class="w-[90%]  md:w-full  xl:w-[89%] mx-auto  grid md:grid-cols-6  xl:grid-cols-6">
+            <div class="w-[16,6%]   h-12 border-t md:border-t-0  border-x md:border-r-0 md:border-y-0 border-solid border-bordergray   bg-bgColor"><a href="#" class="pt-3 text-center block">Best Seller</a></div>
+            <div class="w-[16,6%]    h-12 border-t border-x border-solid border-bordergray md:border-r md:border-y-0  hover:bg-bgColor"><a href="#" class="pt-3 text-center block">Last Acts</a></div>
+            <div class="w-[16,6%]    h-12 border border-solid border-[#ebebeb] md:border-0 hover:bg-bgColor"><a href="#" class="pt-3 text-center block">Top Rated</a></div>
+            <div class="w-[16,6%]  h-12 border-x  md:border-x border-solid border-bordergray hover:bg-bgColor"><a href="#" class="pt-3 text-center block">Related Products</a></div>
+            <div class="w-[16,6%]   h-12  border-t border-x border-solid border-bordergray md:border-0 hover:bg-bgColor"><a href="#" class="pt-3 text-center block">Hot Products</a></div>
+            <div class="w-[16,6%]   h-12 border  md:border-x md:border-y-0 border-solid border-bordergray hover:bg-bgColor"><a href="#" class="pt-3 text-center block">Sales Off</a></div>
+            </main>
+       
+    </aside>
+    <!-- End Section 2 -->
+
+    <!-- Start Section 3 -->
+    <aside class="bg-bgColor pt-16 pb-24  border-y md:border-y-0 md:border-b border-solid border-gain font-playfair">
+         <section class="container grid grid-cols-1 md:grid-cols-3 md:gap-1 py-12">
+     
+             <main class=" w-full md:w-[95%] mb-5 md:mb-0 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                 <!-- there -->
+                 <main class="bg-white p-3 " style="border:0.5px none #e6e6e6 ;">  
+                     <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                         <div id="divs" class="bg-bgColor ">
+                             <img id="scalimg" src="./images/imgcard1.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                         </div>
+                     </a>
+                 </main>
+             
+             
+                 <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                     <div class="">
+                                 <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Neck Message Location</a>
+                                 <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                 <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">New Arrivals</a></p></div>
+                     <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 135.00 USD</p></div>
+                     </main>  
+                     </div>
+                     </div>
+             </main>
+             
+             <main class="w-full md:w-[95%]  mb-5 md:mb-0 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                 <!-- there -->
+                 <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                     <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                         <div id="divs" class="bg-bgColor ">
+                             <img id="scalimg" src="./images/imgcard2.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                         </div>
+                     </a>
+                 </main>
+             
+             
+                 <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                     <div>
+                                 <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Hair Creme</a>
+                                 <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                 <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">Skin Care</a></p></div>
+                     <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 125.00 USD</p></div>
+                     </main>  
+                     </div>
+                     </div>
+             </main>
+             
+             <main class="w-full md:w-[95%]  mb-5 md:mb-0 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                 <!-- there -->
+                 <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                     <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                         <div id="divs" class="bg-bgColor ">
+                             <img id="scalimg" src="./images/imgcard4.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                         </div>
+                     </a>
+                 </main>
+             
+             
+                 <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                     <div>
+                                 <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Hands Care Creme</a>
+                                 <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                 <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">Skin Care</a></p></div>
+                     <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 125.00 USD</p></div>
+                     </main>  
+                     </div>
+                     </div>
+             </main>
+             
+             </section>
+             <section style="margin-top: -28px;" class=" container grid grid-cols-1 md:grid-cols-3 gap-1">
+             
+             
+                 <main class="w-full md:w-[95%] mb-5 bg-white " style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                     <!-- there -->
+                     <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                         <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                             <div id="divs" class="bg-bgColor ">
+                                 <img id="scalimg" src="./images/p4.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                             </div>
+                         </a>
+                     </main>
+                 
+                 
+                     <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                         <div>
+                                     <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Lime Body Wash</a>
+                                     <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                     <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-base">Make-Up Tools</a></p></div>
+                         <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 365.00 USD</p></div>
+                         </main>  
+                         </div>
+                         </div>
+                 </main>
+                 
+                 <main class="w-full md:w-[95%] mb-5 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                     <!-- there -->
+                     <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                         <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                             <div id="divs" class="bg-bgColor ">
+                                 <img id="scalimg" src="./images/imgcard6.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                             </div>
+                         </a>
+                     </main>
+                 
+                 
+                     <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                         <div>
+                                     <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Body Lotion</a>
+                                     <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                     <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">New Arrivals</a></p></div>
+                         <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 235.00 USD</p></div>
+                         </main>  
+                         </div>
+                         </div>
+                 </main>
+                 
+                 <main class="w-full md:w-[95%] mb-5 bg-white" style=" box-shadow:0 1px 3px 0 rgb(82 91 115 / 12%) ;">
+                     <!-- there -->
+                     <main class="bg-white p-3" style="border:0.5px none #e6e6e6 ;">  
+                         <a href="" class="w-full " style="border-bottom: 1px none #000;">
+                             <div id="divs" class="bg-bgColor ">
+                                 <img id="scalimg" src="./images/p6.png" class="block w-auto h-[380px] mx-auto text-center" alt="">
+                             </div>
+                         </a>
+                     </main>
+                 
+                 
+                     <div style="border: 1px none #e0e0e0;  padding: 15px 0px 0px;  background-color: transparent;" class="relative z-50 mt-0 text-left">
+                         <div>
+                                     <a class="text-center border-b hover:text-primColor border-b-bordergray text-xl block pt-1 pb-4" href="#">Clear Makeup Creme</a>
+                                     <main class="flex items-center flex-col md:flex-row  justify-around ">
+                                     <div class="py-3 mx-auto w-full md:w-1/2  text-gray hover:text-black  hover:bg-bgColor   md:border-r text-center  border-solid border-bordergray "><p><a href="#" class="text-lg">Nail Polish</a></p></div>
+                         <div class="w-full md:w-1/2 py-3 mx-auto text-gray border-t  border-solid border-bordergray text-center md:border-0"><p class="text-lg">$ 95.00 USD</p></div>
+                         </main>  
+                         </div>
+                         </div>
+                 </main>               
+             </section>
+             <div class=" flex items-center justify-center pt-12">
+                 <a href="" class=" inline-block  text-primColor border border-solid border-primColor py-4 px-8 text-xs hover:bg-primColor hover:text-white hover:duration-1000" id="bottom">VIEW ALL PRODUCTS!</a>
+                 </div> 
+         </aside>
+             
+    <!-- End Section 3 -->
+    <!-- Start Section 4 -->
+    <section id="MakeUp" class=" border-1 border-gray-400 md:pb-11 leading-6 py-10  mb-5 font-playfair">
+        <div class=" container flex flex-wrap md:flex-nowrap items-center md:justify-between  ">
+            <div>
+                <p class="mb-2 text-sm text-red-500 text-center md:text-left">PROMOTION ENDS TODAY</p>
+                <h1 class="text-4xl text-red-900 w-[80%] md:w-full mx-auto md:mx-auto text-center md:text-left">Get the Promotion of the month</h1>
+            </div>
+            <div class="w-full md:w-1/2 text-center md:text-right my-auto pt-4 md:pt-0 ">
+                <a href="" class=" inline-block     py-4 px-8 text-xs bg-blakred hover:bg-primColor text-white hover:duration-1000" id="">ORDER NOW!</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Section 4 -->
+        <!-- footer -->
+
+    
+    <!-- 2 -->
+    <section class="font-playfair">
+        <main class="container ">
+            <div class="py-20" id="bgfooter">
+            <p class="text-4xl text-center" style="letter-spacing: 9px;">NERONE</p>
+        </main>
+        </section>
+        <section class="container">
+        <form class="pt-6">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+            <input type="email" class="h-12 px-5  outline-none w-full md:w-[26%] bg-bordergray border-b border-solid border-b-zinc-300  " placeholder="Enter Your Email Here">
+            <button type="submit" class="text-white bg-primColor h-12 px-10 w-full md:w-[24%] ">SUBMIT NOW</button>
+           </form>
+            </div>
+    </section>
+    
+    <!-- 3 -->
+    <section class="pt-28 pb-[60px] font-playfair">
+    
+    
+        <div class="container mb-14 pt-2 pb-1 border-y border-solid border-[#dbd8d8] flex  flex-col md:flex-row ">
+            <aside class="flex">
+            <div class="px-12 pb-3 xl:px-16 "><a href="index.html">HOME</a></div>
+            <div class="px-12 pb-3 xl:px-16 mx-auto md:mx-0 "><a href="Licensing.html" class="">PAGES</a></div>
+             </aside>
+             <aside class="flex">
+            <div class="px-12 pb-3 xl:px-16 "><a href="Shop.html">SHOP</a></div>
+            <div class="px-12 pb-3 xl:px-16 mx-auto md:mx-0"><a href="BestSeller.html">COLLECTIONS</a></div>
+            </aside>
+            <aside class="flex">
+            <div class="px-12 pb-3 xl:px-16 "><a href="Blog.html">BLOG</a></div>
+            <div class="px-12 pb-3 xl:px-16 mx-auto md:mx-0"><a href="Contact.html">CONTACT</a></div>
+            </aside>
+        </div>
+        </main>
+    </section>
+        <section class="container text-center pb-[70px] font-playfair">
+            <p class="text-gray">Template design by <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Dorian Hoxha</a> - <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Image License Info </a> & <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Style-Guide </a>, Powered by <a href="#" class="text-black hover:text-primColor hover:border-primColor hover:border-b hover:border-solid">Webflow</a></p>
+            <div class="flex items-center justify-center mt-8">
+            <p><a href="#"><svg class="w-3 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></p>
+            <p><a href="#"><svg class="w-4 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a></p>
+            <p><a href="#"><svg class="w-4 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></p>
+            <p><a href="#"><svg class="w-4 mr-5 fill-gray hover:fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a></p>
+        </div>
+        </section>
+    
+</body>
+
+
+
+
+

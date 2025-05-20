@@ -1,0 +1,626 @@
+/* Basics */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 84%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+     font-family: 'EB Garamond', serif;
+}
+#bgsection{
+    /* filter: opacity(100%); */
+    background-image: url('../images/girl.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   /* -webkit-filter: opacity(100%); */
+    
+
+}
+
+/* ------ */
+/* Section 1 */
+
+/* Animation */
+#bottom:hover{
+    transform: translate(0px,-6px);
+    -webkit-transform: translate(0px,-6px);
+    -moz-transform: translate(0px,-6px);
+    -ms-transform: translate(0px,-6px);
+    -o-transform: translate(0px,-6px);
+}
+#btn-line::after{
+content: '';
+width: 100%;
+height: 1px;
+background-color: #dd5e2d;
+display: block;
+margin: auto;
+}
+#btn-line:hover::after{
+    background-color: black;
+}
+
+.rotatep{
+    animation: movedown 1s linear 1;
+    -webkit-animation: movedown 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown{
+    0%{
+       transform: translateY(-17px) rotate(-90deg);
+       -webkit-transform: translateY(-17px) rotate(-90deg);
+       -moz-transform: translateY(-17px) rotate(-90deg);
+       -ms-transform: translateY(-17px) rotate(-90deg);
+       -o-transform: translateY(-17px) rotate(-90deg);
+}
+    100%{
+        transform: translateY(0) rotate(-90deg) ;
+        -webkit-transform: translateY(0) rotate(-90deg) ;
+        -moz-transform: translateY(0) rotate(-90deg) ;
+        -ms-transform: translateY(0) rotate(-90deg) ;
+        -o-transform: translateY(0) rotate(-90deg) ;
+        visibility: visible;
+}
+}
+
+.arrow{
+    animation: movedown1 1s linear 1;
+    -webkit-animation: movedown1 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown1{
+    0%{
+     transform: translateY(-17px);
+     -webkit-transform: translateY(-17px);
+     -moz-transform: translateY(-17px);
+     -ms-transform: translateY(-17px);
+     -o-transform: translateY(-17px);
+}
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        visibility: visible;
+}
+}
+
+.content{
+    animation: moveup 1s linear 1;
+    -webkit-animation: moveup 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveup{
+    0%{
+   transform: translateY(20px);
+   -webkit-transform: translateY(20px);
+   -moz-transform: translateY(20px);
+   -ms-transform: translateY(20px);
+   -o-transform: translateY(20px);
+}
+    100%{
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      visibility: visible;
+}
+}
+
+.scallimg{
+    animation: zoomin 0.7s linear 1;
+    -webkit-animation: zoomin 0.7s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes zoomin{ 
+    0%{
+   transform: scale(0.5);
+   -webkit-transform: scale(0.5);
+   -moz-transform: scale(0.5);
+   -ms-transform: scale(0.5);
+   -o-transform: scale(0.5);
+}
+    100%{
+   transform: scale(1);
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   -o-transform: scale(1);
+   visibility: visible;
+}
+}
+
+.logo{
+    animation: moveright 1s linear 1;
+    -webkit-animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+}
+    100%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        visibility: visible;
+}
+} 
+
+ .list{
+    animation: moveleft 1s linear 1;
+    -webkit-animation: moveleft 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveleft{
+    0%{
+      transform: translateX(100px);
+      -webkit-transform: translateX(100px);
+      -moz-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+      -o-transform: translateX(100px);
+}
+    100%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        visibility: visible;
+}
+}
+/* --------- */
+
+/* list */
+@media screen and (max-width:991px) {
+    #bgsection{
+    /* filter: opacity(50%);
+    -webkit-filter: opacity(50%); */
+     height: auto;
+    min-height: 700px;
+    padding-top: 0px;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 95.3%, 0.75), hsla(0, 0%, 95.3%, 0.75)), url(../images/girl.jpg), url(../images/opacity.jpg);
+    background-position: 0px 0px, 100% 100%, 50% 0px;
+    background-size: auto, cover, cover;
+    background-repeat: repeat, no-repeat, no-repeat; 
+    }
+    header .links .icon{
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    header .links .icon span{
+        background: #333;
+        margin-bottom: 5px;
+        height: 2px;
+    }
+    header  .links .icon span:first-child , header  .links .icon span:last-child{
+        width:100%;
+    }
+    header  .links .icon span:nth-child(2){
+        width:60%;
+        transition: 0.8s;
+        -webkit-transition: 0.8s;
+        -moz-transition: 0.8s;
+        -ms-transition: 0.8s;
+        -o-transition: 0.8s;
+    }
+    header .links:hover .icon span:nth-child(2){
+       width: 100%;
+    }
+}
+/* ----------- */
+ .links ul{
+    background-color:white;
+    position: absolute;
+     top: 64%;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+.links:hover ul{
+     display: block;
+     z-index: 1;
+}
+
+ ul li a{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 15px;
+}
+.links ul li:hover a{
+     padding-left: 25px;
+     transition: 0.3s;
+     -webkit-transition: 0.3s;
+     -moz-transition: 0.3s;
+     -ms-transition: 0.3s;
+     -o-transition: 0.3s;
+}
+.links ul li:not(:last-child){
+     border-bottom: 1px solid #ddd;
+}
+
+/* ------------ */
+header ul li{
+        position: relative;
+}
+header ul li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 120px;
+    background-color: rgb(56, 55, 55);
+ }
+ header ul li ul li{
+    width: 100%;
+    
+ }
+ header ul li ul li a{
+    color: white;
+    border-bottom: 0.5px solid rgb(133, 130, 130);
+ }
+ header ul li ul li:hover a{
+    background-color: rgb(39, 39, 39);
+ }
+ header ul li:hover ul{
+    display: block;
+ }
+    /* -------- */
+ 
+    /* Section2 */
+#bgdiv{
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.92), hsla(0, 0%, 100%, 0.92)), url(../images/nbig.png);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, 300px;
+    background-repeat: repeat, no-repeat;
+    border-bottom: 1px solid gainsboro;
+    
+}
+/* Section 3 */
+
+/* section 5 */
+@media screen and (max-width:786px) {
+    .flexdiv{
+       
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+    .flexdiv{
+        flex-wrap: nowrap;
+    }
+/* section 5 */
+.linediv{ 
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+    width: 240px;
+    background-color: #e0dede;
+ } 
+@media screen and (min-width: 1200px) {
+    .linediv{ 
+       width: 240px;
+    } 
+}
+ @media screen and (max-width: 1050px) {
+    .linediv{ 
+       width: 150px;
+    } 
+} 
+@media screen and (max-width: 500px) {
+    .linediv{ 
+       width: 300px;
+    } 
+} 
+
+#trans1{
+    transition: all 0.3s 0s ease-in-out;
+    -webkit-transition: all 0.3s 0s ease-in-out;
+    -moz-transition: all 0.3s 0s ease-in-out;
+    -ms-transition: all 0.3s 0s ease-in-out;
+    -o-transition: all 0.3s 0s ease-in-out;
+}
+#bgfooter{
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.86), hsla(0, 0%, 100%, 0.86)), url(../images/bgfooter.png);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, 150px;
+    background-repeat: repeat, no-repeat;
+}
+        
+#trans1:hover{
+        transform: translate(0px,-8px);
+        -webkit-transform: translate(0px,-8px);
+        -moz-transform: translate(0px,-8px);
+        -ms-transform: translate(0px,-8px);
+        -o-transform: translate(0px,-8px);
+}
+/* Section 10 */
+.swiper-slide img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* Section 11 */
+#trans2{
+    transition: all 0.3s 0s ease-in-out;
+    -webkit-transition: all 0.3s 0s ease-in-out;
+    -moz-transition: all 0.3s 0s ease-in-out;
+    -ms-transition: all 0.3s 0s ease-in-out;
+    -o-transition: all 0.3s 0s ease-in-out;
+}        
+#trans2:hover{
+        transform: translate(0px,-9px);
+        -webkit-transform: translate(0px,-9px);
+        -moz-transform: translate(0px,-9px);
+        -ms-transform: translate(0px,-9px);
+        -o-transform: translate(0px,-9px);
+}
+
+
+/* footer */
+#div1{
+    background-image: linear-gradient(180deg, rgba(255, 147, 63, 0.88), rgba(255, 147, 63, 0.88)), url(../images/formimage.png);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, 500px;
+    background-repeat: repeat, no-repeat;
+}
+#div2{
+    background-image: linear-gradient(180deg, rgba(216, 72, 17, 0.9), rgba(216, 72, 17, 0.9)), url(../images/learnmore.png);
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, 500px;
+    background-repeat: repeat, no-repeat;
+}
+#btn-line2::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    filter: opacity(0.4);
+    -webkit-filter: opacity(0.4);
+}
+#btn-line2::after:hover{
+    filter: opacity(1);
+    -webkit-filter: opacity(1);
+}
+
+/* Contact */
+#bginput{
+    background-image: url(../images/yourname.png);
+    background-repeat: no-repeat;
+    background-position: 3%;
+    background-size: 25px;
+}
+#bginput2{
+    background-image: url(../images/youremail.png);
+    background-repeat: no-repeat;
+    background-position: 3%;
+    background-size: 25px;
+}
+#bginput3{
+    background-image: url(../images/massegeform.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+}
+#contactbg{
+    position: absolute;
+    top: 400px;
+    bottom: 28px;
+    background-image: url(../images/letsget.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Blog */
+.bgheader{
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.75), hsla(0, 0%, 100%, 0.75)), url(../images/shopobs.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+}
+.aboutimg{
+    background-image: url(../images/mainproduct.png), linear-gradient(180deg, hsla(0, 0%, 100%, 0.84), hsla(0, 0%, 100%, 0.84)), url(../images/nbig.png);
+    background-position: 50% 100%, 0px 0px, 50% 0px;
+    background-size: contain, auto, 500px;
+    background-repeat: no-repeat, repeat, no-repeat;
+}
+@media screen and (max-width: 450px) {
+.aboutimg{
+background-image: url(../images/mainproduct.png), linear-gradient(180deg, hsla(0, 0%, 100%, 0.87), hsla(0, 0%, 100%, 0.87)), url(../images/nbig.png);
+    background-size: contain, auto, 260px;
+}
+}
+/* six divs */
+#scalimg{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#divs:hover #scalimg {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* Best Seller */
+@media screen and (min-width: 1024px) {
+.bstSel{
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: url(../images/mainproduct.png), url(../images/BESTSeller.jpg);
+    background-position: 90% 30%, 50% 50%;
+    background-size: 600px, cover;
+    background-repeat: no-repeat, repeat;
+    background-attachment: scroll, scroll;
+}
+}
+
+@media screen and (max-width: 450px) {
+    .bstSel{
+        padding-right: 20px;
+        padding-left: 20px;
+        background-image: url(../images/BESTSeller.jpg);
+        background-position: 90% 30%, 50% 50%;
+        background-size: 600px, cover;
+        background-repeat: no-repeat, repeat;
+        background-attachment: scroll, scroll;
+    }
+    }
+    #MakeUp{
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.84), hsla(0, 0%, 100%, 0.84)), url(../images/makeUp.jpg);
+    background-position: 0px 0px, 50% -174px;
+    background-size: auto, cover;
+    background-repeat: repeat, repeat;
+    }
+
+    /* Last Acts */
+
+    @media screen and (min-width: 1024px) {
+        .LstAct{
+            padding-right: 20px;
+            padding-left: 20px;
+            background-image: url(../images/LastAct.png), url(../images/BESTSeller.jpg);
+            background-position: 90% 30%, 50% 50%;
+            background-size: 600px, cover;
+            background-repeat: no-repeat, repeat;
+            background-attachment: scroll, scroll;
+        }
+        }
+        
+    @media screen and (max-width: 850px) {
+            .LstAct{
+           padding-right: 20px;
+           padding-left: 20px;
+           background-image:url(../images/BESTSeller.jpg);
+           background-position: 90% 30%, 50% 50%;
+           background-size: 600px, cover;
+           background-repeat: no-repeat, repeat;
+           background-attachment: scroll, scroll;    
+    }
+    }
+
+    /* Top Rated */
+    @media screen and (min-width: 1024px){
+        .TopRated{
+            padding-right: 20px;
+            padding-left: 20px;
+            background-image: url(../images/formimage.png), url(../images/BESTSeller.jpg);
+            background-position: 90% 30%, 50% 50%;
+            background-size: 600px, cover;
+            background-repeat: no-repeat, repeat;
+            background-attachment: scroll, scroll;
+        }
+        }
+        
+    @media screen and (max-width: 850px) {
+            .TopRated{
+           padding-right: 20px;
+           padding-left: 20px;
+           background-image:url(../images/BESTSeller.jpg);
+           background-position: 90% 30%, 50% 50%;
+           background-size: 600px, cover;
+           background-repeat: no-repeat, repeat;
+           background-attachment: scroll, scroll;    
+    }
+    }
+    /* Hot Product */
+    @media screen and (min-width: 1024px){
+    .Hotpro{
+        padding-right: 20px;
+    padding-left: 20px;
+    background-image: url(../images/learnmore.png), url(../images/BESTSeller.jpg);
+    background-position: 90% 0%, 50% 50%;
+    background-size: 600px, 2080px;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed, scroll;
+    }
+}
+@media screen and (max-width: 850px){
+.Hotpro{
+background-image: url(../images/BESTSeller.jpg);
+    background-position: 50% 50%;
+    background-size: 2080px;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+}
+    /* Licensing */
+    @media screen and (min-width: 1024px){
+    #bglen{
+        background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.63), hsla(0, 0%, 100%, 0.63)), url(../images/bglen.jpg);
+    background-position: 0px 0px, 57% -137px;
+    background-size: auto, cover;
+    background-repeat: repeat, repeat;
+    }
+}
+@media screen and (max-width: 450px) {
+#bglen{
+background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.63), hsla(0, 0%, 100%, 0.63)), url(../images/bglen.jpg);
+    background-position: 0px 0px, 57% -137px;
+    background-size: auto, cover;
+    background-repeat: repeat, repeat;
+}
+}
+/* About */
+
+.ManWomenT{
+    background-position: 50% ;
+    background-size: cover;
+}
+.man{
+    background-image: url(../images/scarousel.jpg);
+}
+.women1{
+    background-image: url(../images/cute2.jpg);
+}
+.man2{
+    background-image: url(../images/cuteman.jpg);
+}
+.man3{
+    background-image: url(../images/fcarousel.jpg);
+}
+
+
+
